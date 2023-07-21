@@ -4,7 +4,7 @@ import avatar from '../Components/avatar.png';
 import { useNavigate } from "react-router-dom";
 
 
-export default function SigninMain({setUser}) {
+export default function SigninMain({ setUser }) {
     const [username, setUsername] = useState('');
     const [isDis, setIsDis] = useState(true);
     const Validate = (name) => {
@@ -23,14 +23,12 @@ export default function SigninMain({setUser}) {
                     <img src={avatar} alt="avatar" />
                 </div>
                 <br />
-                <div>
-                    <div className="container_form">
-                        <label htmlFor="fname"><span>Username </span></label><br />
-                        <input type="text" id="fname" name="fname" placeholder="type Username"
-                            onChange={(e) => Validate(e.target.value)} /><br />
-                        <button disabled={isDis} type="submit"
-                        onClick={()=>{setUser(username); navigate("/book-list"); }}>Sign-in</button>
-                    </div>
+                <div className="container_form">
+                    <label htmlFor="fname"><span>Username </span></label><br />
+                    <input type="text" id="fname" name="fname" placeholder="type Username"
+                        onChange={(e) => Validate(e.target.value)} /><br />
+                    <button disabled={isDis} type="submit"
+                        onClick={() => { setUser(username); navigate("/book-list"); }}>Sign-in</button>
                 </div>
             </div>
         </main>
