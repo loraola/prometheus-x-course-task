@@ -1,8 +1,7 @@
 import '../index.css';
 
 export default function CartWithBadge({countAll}){
-    let x;
-  (countAll>9)?x=8:x=10;
+    let x=countAll>9?8:10;
 return(
 
 <svg id="badge" style={{width:50,height:50}} enableBackground="new 0 0 26 26" version="1.1" 
