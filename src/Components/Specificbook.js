@@ -4,6 +4,9 @@ import { useState, useContext} from 'react';
 import { BookContext } from "../App";
 import bookEmpty from "./bookEmpty.jpg";
 import { BookCartContext } from "../App";
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
 
 export default function SpecificBook() {
     const books = useContext(BookContext);
@@ -15,7 +18,8 @@ export default function SpecificBook() {
     const arrayTags = [...resultBook.tags];
     const [priceTotal, setPriceTotal] = useState(resultBook.price);
     const [count, setCount] = useState(1);
-    
+    const MySwal = withReactContent(Swal);
+
     const AddToCart = () => {
        let resArray=[...BookCart];
         let resFind = resArray.find(book => book.id === id);
@@ -31,10 +35,12 @@ export default function SpecificBook() {
                 totalPrice: count * resultBook.price,
                 id: id,
             };
-            setBookCart([...BookCart, AddBook]);
-            
+            setBookCart([...BookCart, AddBook]);   
         }
-        alert(`${count} Added to the cart`);
+       MySwal.fire({
+        icon:"success",
+        title: <p>Added to the cart</p>
+       });
     }
 
     const countInput = ((event) => {

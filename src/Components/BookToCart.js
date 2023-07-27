@@ -2,19 +2,16 @@ import basket from "../Components/pngwing.com.png";
 import { useContext} from 'react';
 import { BookCartContext } from "../App";
 
-export default function BookToCart({ book, id }) {
+export default function BookToCart({ book}) {
     const [BookCart, setBookCart] = useContext(BookCartContext);
    
     const deleteBook = () => {
     let resArray=[...BookCart];
-    let i=0;
-    let index=0;
-    resArray.forEach((b) => { 
-        if (b.id===book.id) index=i;
-        i++
-    });
+   let index=resArray.findIndex((b) => b.id===book.id);
+   if (index!=-1) {
     resArray.splice(index, 1);
     setBookCart(resArray);
+   }
     };
     return (
         <div className="book-cart-row">

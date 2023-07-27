@@ -2,17 +2,15 @@ import Card from './Card';
 import '../index.css';
 import { useState, useContext } from "react";
 import { BookContext } from "../App";
-import { UserContext } from '../App';
 
 export default function BookList() {
-    const [user,setUser] = useContext(UserContext); 
     const books = useContext(BookContext);
     const [arrayBook, setArrayBook] = useState(books);
 
     const arrayCard = arrayBook.map((b) => <Card book={b} key={b.id}></Card>);
-    const less15="0 < ціна <=15";
-    const between1530="15 < ціна <=30";
-    const more30="ціна > 30";
+    const less15="0 < price <=15";
+    const between1530="15 < price <=30";
+    const more30="price > 30";
 
     function priceSort(order) {
         let array = [...books];
@@ -41,7 +39,7 @@ export default function BookList() {
     }
 
     return (
-        <main className='main'>
+        <main>
             <div className="container  d-flex">
                 <div>
                     <br />
@@ -53,7 +51,7 @@ export default function BookList() {
                         Price
                     </button>
                     <ul className="dropdown-menu">
-                        <li><button onClick={() => priceSort('all')} className="dropdown-item" href="#">Всі</button></li>
+                        <li><button onClick={() => priceSort('all')} className="dropdown-item" href="#">All</button></li>
                         <li><button onClick={() => priceSort('less15')} className="dropdown-item" href="#">{less15}</button></li>
                         <li><button onClick={() => priceSort('15-30')} className="dropdown-item" href="#">{between1530}</button></li>
                         <li><button onClick={() => priceSort('more30')} className="dropdown-item" href="#">{more30}</button></li>

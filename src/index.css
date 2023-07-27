@@ -3,7 +3,6 @@ html,body {
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -26,7 +25,7 @@ body * {
 }
 .main{
   display:flex;
-  height: 81vh;
+  height: 80vh;
   justify-content: center;
   margin: 0 0 0 0;
   background-color: hsl(60, 67%, 92%);  
@@ -64,6 +63,7 @@ button[type=submit] {
 input[type=text], button[type=submit], .container_form_v, form {
   width:100%;
 } 
+
 }
 
 
@@ -303,4 +303,17 @@ div.noPage p {
   justify-content: center;
   margin: 20px 0 20px 0;
   flex-wrap: wrap;
+}
+
+
+.container_emptyCart {
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+}
+.img-emptyCart {
+  margin-top: 50px;
+}
+.text-emptyCart {
+  margin-bottom: 120px;
 }
