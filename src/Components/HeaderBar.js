@@ -8,10 +8,10 @@ import { BookCartContext } from "../App";
 import CartWithBadge from "./CartWithBadge";
 
 export default function HeaderBar() {
-    const [BookCart]=useContext(BookCartContext);
+    const [BookCart, setBookCart] = useContext(BookCartContext);
     const [user, setUser] = useContext(UserContext);
     const navigate = useNavigate();
-    const signOut = () => { setUser(''); navigate("/"); }
+    const signOut = () => { setUser(''); setBookCart([]); navigate("/"); }
     return (
         <div className="d-flex align-items-center">
             <Link to={'/purchase-complete/'}>
