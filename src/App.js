@@ -20,7 +20,7 @@ function App() {
   const [BookCart, setBookCart] = useState([]);
   return (
 
-    <div >
+    < >
       <BookContext.Provider value={books.books}>
         <UserContext.Provider value={[user, setUser]}>
           <BookCartContext.Provider value={[BookCart, setBookCart]}>
@@ -38,7 +38,7 @@ function App() {
           </BookCartContext.Provider>
         </UserContext.Provider>
       </BookContext.Provider>
-    </div>
+    </>
   );
 }
 

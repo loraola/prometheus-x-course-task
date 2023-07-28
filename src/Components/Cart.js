@@ -49,7 +49,7 @@ export default function Cart() {
         navigate("/book-list");   
     }
     return (
-        <>
+        <main className="page-body">
             <div className="grid-container">
                 <div className="purchase">
                     <button id="purch" type="submit" onClick={shopping}>Continue shopping</button>
@@ -60,6 +60,6 @@ export default function Cart() {
                 </div>
             </div>
             {cart}
-        </>
+        </main>
     )
 }

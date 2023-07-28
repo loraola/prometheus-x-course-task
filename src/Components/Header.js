@@ -9,7 +9,7 @@ export default function Header() {
 const [user] = useContext(UserContext); 
 let headerbar= user!==''? <HeaderBar />: null;
     return (
-        <header className="header-style">
+        <header className="header-style page-header">
         <nav className="navbar">
             <div className="container d-flex justify-content-space-between">
                 <h2 className="header_title">X-course task / Larisa Olashyn </h2>
