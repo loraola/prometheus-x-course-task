@@ -42,11 +42,9 @@ export default function BookList() {
         <main>
             <div className="container  d-flex">
                 <div>
-                    <br />
                     <input onInput={(e) => filterItems(e.target.value)} type="text" name="search" placeholder="Search by book name" id="search" />
                 </div>
                 <div className="dropdown">
-                    <br />
                     <button type="button" className="btn_sm dropdown-toggle" data-bs-toggle="dropdown">
                         Price
                     </button>
