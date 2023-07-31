@@ -55,15 +55,15 @@ export default function SpecificBook() {
 
     return (
         <main>
-            <div className="row">
+            <div className="rowPropetyBook">
                 <div className="row_item1">
                     <img src={altBook} alt="title_book" />
                 </div>
                 <div className="row_item2">
                     <p id="book_name"> {resultBook.title}</p>
-                    <p className="info_book"> {resultBook.author}</p>
-                    <p className="info_book"> {resultBook.level}</p>
-                    <p className="info_book"> {arrayTags.join("   ")}</p>
+                    <p className="info_book"> Author:  {resultBook.author}</p>
+                    <p className="info_book"> Level:  {resultBook.level}</p>
+                    <p className="info_book"> Tags:  {arrayTags.join(",  ")}</p>
                 </div>
                 <div className="row_item3">
                     <div className="column3_row">
