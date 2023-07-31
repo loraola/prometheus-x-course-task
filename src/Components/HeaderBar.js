@@ -17,10 +17,10 @@ export default function HeaderBar() {
             <Link to={'/purchase-complete/'}>
                 {BookCart.length !== 0 ? <CartWithBadge countAll={BookCart.reduce(
                     (acc, curr) => acc + curr.count, 0)} /> :
-                    <img className="navbar-brand" src={cart} alt="basket" width="50" height="50" />}
+                    <img className="navbar-brand" src={cart} alt="basket" width="25" height="25" />}
             </Link>
             <button className="btn_m  " onClick={signOut}>Sign-Out</button>
-            <img className="navbar-brand" src={avatar} alt="profil" width="50" height="50" />
+            <img className="navbar-brand" src={avatar} alt="profil" width="25" height="25" />
             <span> {user}</span>
         </div>
     )
