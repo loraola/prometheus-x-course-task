@@ -6,7 +6,8 @@ import { useContext } from 'react';
 import BookToCart from './BookToCart';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2'
-import withReactContent from 'sweetalert2-react-content'
+import withReactContent from 'sweetalert2-react-content';
+import continuePar from '../Components/continuePar.jpg';
 
 function FullCart({ array }) {
     let sum = 0;
@@ -52,7 +53,7 @@ export default function Cart() {
         <main className="page-body">
             <div className="grid-container">
                 <div className="purchase">
-                    <button id="purch" type="submit" onClick={shopping}>Continue shopping</button>
+                    <img className="navbar-brand shopping" src={continuePar} alt="continue" onClick={shopping} />
                 </div>
                 <div />
                 <div className="purchase">
