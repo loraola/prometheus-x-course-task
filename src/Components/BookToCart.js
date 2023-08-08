@@ -14,14 +14,14 @@ export default function BookToCart({ book}) {
    }
     };
     return (
-        <div className="book-cart-row">
+        <div className="grid-container-book">
             <div className="book-cart-item1">
                 <p>{book.title}</p>
             </div>
             <div className="book-cart-item2">
                 <p>{book.count}</p>
             </div>
-            <div></div>
+    
             <div className="book-cart-item3">
                 <p>{book.totalPrice}</p>
             </div>

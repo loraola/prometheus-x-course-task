@@ -7,7 +7,7 @@ import BookToCart from './BookToCart';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content';
-import continuePar from '../Components/continuePar.jpg';
+import continuePar from '../Components/NicePng_cart.png';
 
 function FullCart({ array }) {
     let sum = 0;
