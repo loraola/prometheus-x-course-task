@@ -91,17 +91,11 @@ button[type=submit] {
   header.header-style.page-header {
     position: sticky;
     top: 0;
-  }
+    z-index: 1000;
+  } 
 
-  div.card.book-card {
+   div.card.book-card {
     width: 100%;
-    position: sticky;
-    top: 224px;
-  }
-
-  .searchFilter {
-    position: sticky;
-    top: 100px;
   }
 
   div.container.d-flex {
@@ -133,13 +127,12 @@ button[type=submit] {
 
   /*Cart  */
   div.grid-container {
-    grid-template-columns: 25% 25% 25%;
+    grid-template-columns: 100%;
     justify-content: center;
   }
 
   div.purchase>button {
-    width: auto;
-
+  width: 100%;
   }
 
   div.book-cart-item1 {
@@ -148,6 +141,20 @@ button[type=submit] {
   div.book-cart-item4 img {
     width: 35%;
     height: 35%;
+}
+/* headerBar */
+#arrow {
+  display: block !important;
+  margin: 0px 0px;
+}
+svg#badge {
+  width: 35px;
+  height: 35px;
+}
+
+/* purcher */
+img.navbar-brand.shopping{
+  display:none;
 }
 }
 
@@ -204,6 +211,10 @@ footer {
   background-color: purple;
 }
 
+
+#arrow{
+  display: block;  
+}
 
 
 .bg-card-body {
@@ -338,6 +349,7 @@ input {
 .purchase {
   display: flex;
   justify-content: space-around;
+  align-items: flex-end;
 }
 
 #description {
@@ -391,6 +403,20 @@ div.noPage p {
   text-align: center;
 }
 
+.grid-container-book {
+  display: grid;
+  grid-template-columns: 35% 25% 25% 15%;
+  background-color: #faf5ee;
+  height: 75px;
+  border: orange solid;
+  margin: -2px 10px;
+  align-items: center;
+}
+
+.grid-container-book>div {
+  text-align: left;
+}
+
 .totalPrice {
   display: flex;
   justify-content: flex-end;
@@ -416,10 +442,7 @@ div.noPage p {
 }
 .shopping {
   width: 50px;
-  height: 50px;
   margin: 10px 10px 20px;
-  border: 1px solid purple;
-    border-radius: 4px;
 }
 
 
