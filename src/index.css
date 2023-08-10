@@ -71,7 +71,7 @@ button[type=submit] {
 }
 
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
 
   /* SigninMain */
   .avatar_box img {
@@ -213,7 +213,7 @@ footer {
 
 
 #arrow{
-  display: block;  
+  display: none;  
 }
 
 

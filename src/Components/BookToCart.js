@@ -23,7 +23,7 @@ export default function BookToCart({ book}) {
             </div>
     
             <div className="book-cart-item3">
-                <p>{book.totalPrice}</p>
+                <p>{book.totalPrice.toFixed(2)}</p>
             </div>
             <div className="book-cart-item4">
                 <img onClick={deleteBook} src={basket} alt="basket" width="25" height="37"/>

@@ -48,7 +48,18 @@ export default function SpecificBook() {
             setPriceTotal(resultBook.price * event);
             setCount(event);
         } else {
-            alert('Введіть число від 1 до 42');
+            Swal.fire({
+                title: 'Введіть число від 1 до 42',
+                showClass: {
+                  popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                  popup: 'animate__animated animate__fadeOutUp'
+                }
+              })
+            //alert('Введіть число від 1 до 42');
+            setCount(0);
+            setPriceTotal(resultBook.price);
         }
     }
     )
@@ -80,7 +91,7 @@ export default function SpecificBook() {
                         <p id='total'> ${priceTotal}</p>
                     </div>
                     <div className="column3_button">
-                        <button type="submit" onClick={AddToCart} >Add to cart</button>
+                        <button type="submit" disabled={count===0} onClick={AddToCart} >Add to cart</button>
                     </div>
                 </div>
             </div>
