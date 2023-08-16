@@ -33,8 +33,8 @@ export default function BookList() {
     }
 
     function filterItems(phrase) {
-        const result = books.filter(book => book.title.includes(phrase));
-        if (result.length > 0)
+        const result = books.filter(book => book.title.toLowerCase().includes(phrase.toLowerCase()));
+        if (result.length > 0) 
             setArrayBook(result);
     }
 
