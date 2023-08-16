@@ -66,15 +66,16 @@ export default function SpecificBook() {
 
     return (
         <main>
+            {window.scrollTo(0, 0)}
             <div className="rowPropetyBook">
                 <div className="row_item1">
                     <img src={altBook} alt="title_book" />
                 </div>
                 <div className="row_item2">
-                    <p id="book_name"> {resultBook.title}</p>
-                    <p className="info_book"> Author:  {resultBook.author}</p>
-                    <p className="info_book"> Level:  {resultBook.level}</p>
-                    <p className="info_book"> Tags:  {arrayTags.join(",  ")}</p>
+                    <h5 id="book_name"> {resultBook.title}</h5>
+                    <p className="info_book"> Author: <span>{resultBook.author}</span> </p>
+                    <p className="info_book"> Level:  <span>{resultBook.level}</span></p>
+                    <p className="info_book"> Tags:  <span>{arrayTags.join(",  ")}</span></p>
                 </div>
                 <div className="row_item3">
                     <div className="column3_row">

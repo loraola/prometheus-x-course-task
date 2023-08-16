@@ -4,7 +4,7 @@ export default function CartWithBadge({countAll}){
     let x=countAll>9?8:10;
 return(
 
-<svg id="badge" style={{width:50,height:50}} enableBackground="new 0 0 26 26" version="1.1" 
+<svg id="badge"  enableBackground="new 0 0 26 26" version="1.1" 
 viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg" >
 <g>
 <path fill="#FFFFFF" 
