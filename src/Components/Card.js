@@ -10,11 +10,14 @@ export default function Card({ book }) {
                 <div className="d-flex justify-content-center">
                     <img src={altBook} className="book-card-image" alt="book"></img>
                 </div>
-                <h6 className="card-title">{titleText} </h6>
+                <div className="tooltip" >
+                <h6 className="card-title" >{titleText}</h6>
+                <span className="tooltiptext">{book.title}</span>
+                </div>
                 <p className="card-text" >{book.author}</p>
                 <div className="d-flex justify-content-between">
                     <h6 className="card-title">{book.price + "$"}</h6>
-                    <Link to={'/specific-book/'+book.id} className="btn_m btn_r text-black">View</Link>
+                    <Link to={'/specific-book/'+book.id+'#start'} className="btn_m btn_r text-black">View</Link>
                 </div>
             </div>
         </div>
