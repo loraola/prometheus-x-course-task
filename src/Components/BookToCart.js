@@ -1,6 +1,7 @@
 import basket from "../Components/pngwing.com.png";
 import { useContext} from 'react';
 import { BookCartContext } from "../App";
+import { Link } from "react-router-dom";
 
 export default function BookToCart({ book}) {
     const [BookCart, setBookCart] = useContext(BookCartContext);
@@ -16,7 +17,7 @@ export default function BookToCart({ book}) {
     return (
         <div className="grid-container-book">
             <div className="book-cart-item1">
-                <p>{book.title}</p>
+            <Link to={'/specific-book/'+book.id+'#start'}><p>{book.title}</p></Link>
             </div>
             <div className="book-cart-item2">
                 <p>{book.count}</p>
