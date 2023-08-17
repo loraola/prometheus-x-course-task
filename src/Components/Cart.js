@@ -53,7 +53,7 @@ export default function Cart() {
         <main className="page-body">
             <div className="grid-container">
                 <div className="purchase">
-                    <img className="navbar-brand shopping" src={shoppingCart} alt="continue" onClick={shopping} />
+                    <img className="navbar-brand shopping" src={continuePar} alt="continue" onClick={shopping} />
                 </div>
                 <div />
                 <div className="purchase">
