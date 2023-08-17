@@ -1,6 +1,6 @@
 import '../index.css';
 import { useParams } from 'react-router-dom';
-import { useState, useContext} from 'react';
+import { useState, useContext } from 'react';
 import { BookContext } from "../App";
 import bookEmpty from "./bookEmpty.jpg";
 import { BookCartContext } from "../App";
@@ -21,7 +21,7 @@ export default function SpecificBook() {
     const MySwal = withReactContent(Swal);
 
     const AddToCart = () => {
-       let resArray=[...BookCart];
+        let resArray = [...BookCart];
         let resFind = resArray.find(book => book.id === id);
         if (resFind) {
             resFind['totalPrice'] = resFind.totalPrice + Number(count) * resFind.price;
@@ -35,12 +35,12 @@ export default function SpecificBook() {
                 totalPrice: count * resultBook.price,
                 id: id,
             };
-            setBookCart([...BookCart, AddBook]);   
+            setBookCart([...BookCart, AddBook]);
         }
-       MySwal.fire({
-        icon:"success",
-        title: <p>Added to the cart</p>
-       });
+        MySwal.fire({
+            icon: "success",
+            title: <p>Added to the cart</p>
+        });
     }
 
     const countInput = ((event) => {
@@ -51,12 +51,12 @@ export default function SpecificBook() {
             Swal.fire({
                 title: 'Введіть число від 1 до 42',
                 showClass: {
-                  popup: 'animate__animated animate__fadeInDown'
+                    popup: 'animate__animated animate__fadeInDown'
                 },
                 hideClass: {
-                  popup: 'animate__animated animate__fadeOutUp'
+                    popup: 'animate__animated animate__fadeOutUp'
                 }
-              })
+            })
             //alert('Введіть число від 1 до 42');
             setCount(0);
             setPriceTotal(resultBook.price);
@@ -66,10 +66,9 @@ export default function SpecificBook() {
 
     return (
         <main>
-            {window.scrollTo(0, 0)}
             <div className="rowPropetyBook">
                 <div className="row_item1">
-                    <img src={altBook} alt="title_book" />
+                    <img  id="start" src={altBook} alt="title_book" />
                 </div>
                 <div className="row_item2">
                     <h5 id="book_name"> {resultBook.title}</h5>
@@ -92,7 +91,7 @@ export default function SpecificBook() {
                         <p id='total'> ${priceTotal}</p>
                     </div>
                     <div className="column3_button">
-                        <button type="submit" disabled={count===0} onClick={AddToCart} >Add to cart</button>
+                        <button type="submit" disabled={count === 0} onClick={AddToCart} >Add to cart</button>
                     </div>
                 </div>
             </div>
