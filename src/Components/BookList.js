@@ -40,6 +40,7 @@ export default function BookList() {
 
     return (
         <main>
+             {window.scrollTo(0, 0)}
             <div className="container  d-flex searchFilter">
                 <div>
                     <input onInput={(e) => filterItems(e.target.value)} type="text" name="search" placeholder="Search by book name" id="search" />
