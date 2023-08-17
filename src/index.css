@@ -465,6 +465,7 @@ div.noPage p {
 
 .shopping {
   width: 50px;
+  height: 35px;
   margin: 10px 10px 20px;
 }
 
@@ -517,4 +518,27 @@ body {
 
 .page-body {
   flex-grow: 1;
+}
+.tooltip {
+  position: relative;
+  opacity: 1;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: darkblue;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  top: -5px;
+  left: 55%;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
