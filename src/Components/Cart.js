@@ -16,7 +16,7 @@ function FullCart({ array }) {
     return (
         <>
             {array.map((b) => <BookToCart book={b} key={b.id} />)}
-            <div className="totalPrice"><p><b>Total price, $ {sum.toFixed(2)}</b></p></div>
+            <div className="container totalPrice"><p><b>Total price, $ {sum.toFixed(2)}</b></p></div>
         </>
     )
 }
@@ -51,7 +51,7 @@ export default function Cart() {
     }
     return (
         <main className="page-body">
-            <div className="grid-container">
+            <div className="container grid-container">
                 <div className="purchase">
                     <img className="navbar-brand shopping" src={continuePar} alt="continue" onClick={shopping} />
                 </div>

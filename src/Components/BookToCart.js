@@ -1,4 +1,4 @@
-import basket from "../Components/pngwing.com.png";
+import basket from "../Components/3669361_delete_ic_icon.svg";
 import { useContext} from 'react';
 import { BookCartContext } from "../App";
 import { Link } from "react-router-dom";
@@ -15,7 +15,7 @@ export default function BookToCart({ book}) {
    }
     };
     return (
-        <div className="grid-container-book">
+        <div className="container grid-container-book">
             <div className="book-cart-item1">
             <Link to={'/specific-book/'+book.id+'#start'}><p>{book.title}</p></Link>
             </div>
@@ -27,7 +27,7 @@ export default function BookToCart({ book}) {
                 <p>{book.totalPrice.toFixed(2)}</p>
             </div>
             <div className="book-cart-item4">
-                <img onClick={deleteBook} src={basket} alt="basket" width="25" height="37"/>
+                <img onClick={deleteBook} src={basket} alt="basket" style={{width:'26px',height:"auto", cursor:"pointer"}}/>
             </div>
         </div>
     )

@@ -17,7 +17,7 @@ export default function Card({ book }) {
                 <p className="card-text" >{book.author}</p>
                 <div className="d-flex justify-content-between">
                     <h6 className="card-title">{book.price + "$"}</h6>
-                    <Link to={'/specific-book/'+book.id+'#start'} className="btn_m btn_r text-black">View</Link>
+                    <Link to={'/specific-book/'+book.id+'#start'} className="btn_m btn_r">View</Link>
                 </div>
             </div>
         </div>

@@ -16,6 +16,7 @@ export default function SpecificBook() {
     const resultBook = books.find(book => book.id === +id);
     const altBook = resultBook.image !== "" ? resultBook.image : bookEmpty;
     const arrayTags = [...resultBook.tags];
+    const tagsSpanArr = arrayTags.map((tag, index) => (<span className='tags' key={index}>{tag} </span>));
     const [priceTotal, setPriceTotal] = useState(resultBook.price);
     const [count, setCount] = useState(1);
     const MySwal = withReactContent(Swal);
@@ -66,15 +67,15 @@ export default function SpecificBook() {
 
     return (
         <main>
-            <div className="rowPropetyBook">
-                <div className="row_item1">
-                    <img  id="start" src={altBook} alt="title_book" />
+            <div className="container rowPropetyBook" style={{marginTop:'30px'}}>
+                <div id="start" className="row_item1">
+                    <img src={altBook} alt="title_book" />
                 </div>
                 <div className="row_item2">
                     <h5 id="book_name"> {resultBook.title}</h5>
                     <p className="info_book"> Author: <span>{resultBook.author}</span> </p>
                     <p className="info_book"> Level:  <span>{resultBook.level}</span></p>
-                    <p className="info_book"> Tags:  <span>{arrayTags.join(",  ")}</span></p>
+                    <p className="info_book"> Tags:  <span>{tagsSpanArr}</span></p>
                 </div>
                 <div className="row_item3">
                     <div className="column3_row">
@@ -95,7 +96,7 @@ export default function SpecificBook() {
                     </div>
                 </div>
             </div>
-            <div>
+            <div className='container' style={{marginTop:'30px'}}>
                 <p id="description"><span>Book description: </span>{resultBook.description}</p>
             </div>
         </main>

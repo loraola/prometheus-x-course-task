@@ -26,7 +26,7 @@ export default function HeaderBar() {
                     (acc, curr) => acc + curr.count, 0)} /> :
                     <img className="navbar-brand" src={cart} alt="basket" />}
             </Link>
-            <button className="btn_m  " onClick={signOut}>Sign-Out</button>
+            <button className="btn_m signout-btn" onClick={signOut}>Sign-Out</button>
             <img className="navbar-brand" src={avatar} alt="profil" />
             <div>
                 <span> {user}</span>

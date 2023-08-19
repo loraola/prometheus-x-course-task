@@ -24,7 +24,7 @@ export default function SigninMain({ setUser }) {
                 </div>
                 <br />
                 <div className="container_form">
-                    <label htmlFor="fname"><span>Username </span></label><br />
+                    <label htmlFor="fname" className='signin-form-label'><span>Username </span></label><br />
                     <input type="text" id="fname" name="fname" placeholder="type Username"
                         onChange={(e) => Validate(e.target.value)} /><br />
                     <button disabled={isDis} type="submit"
