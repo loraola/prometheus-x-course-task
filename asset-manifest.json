@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/prometheus-x-course-task/static/css/main.ea3f2804.css",
-    "main.js": "/prometheus-x-course-task/static/js/main.19f48f43.js",
+    "main.css": "/prometheus-x-course-task/static/css/main.eea7ced5.css",
+    "main.js": "/prometheus-x-course-task/static/js/main.f3d35abc.js",
     "static/js/787.28cb0dcd.chunk.js": "/prometheus-x-course-task/static/js/787.28cb0dcd.chunk.js",
     "static/media/page404.png": "/prometheus-x-course-task/static/media/page404.b305bfb474a86921f691.png",
     "static/media/bookshelfWall.png": "/prometheus-x-course-task/static/media/bookshelfWall.825ec8da33536ecec6dd.png",
     "static/media/arrow--back-icon.png": "/prometheus-x-course-task/static/media/arrow--back-icon.02b3e1b4b7285b3377f5.png",
-    "static/media/pngwing.com.png": "/prometheus-x-course-task/static/media/pngwing.com.2145c2240a816d718781.png",
     "static/media/icons8-shopping.gif": "/prometheus-x-course-task/static/media/icons8-shopping.3d65d67dccd9a6d3b7c3.gif",
     "static/media/avatar.png": "/prometheus-x-course-task/static/media/avatar.0d14c6999b4a5c8e86a7.png",
     "static/media/bookEmpty.jpg": "/prometheus-x-course-task/static/media/bookEmpty.221ea3511f55e7de99a3.jpg",
@@ -14,12 +13,13 @@
     "static/media/cart2.svg": "/prometheus-x-course-task/static/media/cart2.6379ef043636dfb03722dbed8d18a415.svg",
     "static/media/search-3076.svg": "/prometheus-x-course-task/static/media/search-3076.10a972e5e2f9bf555ce5.svg",
     "index.html": "/prometheus-x-course-task/index.html",
-    "main.ea3f2804.css.map": "/prometheus-x-course-task/static/css/main.ea3f2804.css.map",
-    "main.19f48f43.js.map": "/prometheus-x-course-task/static/js/main.19f48f43.js.map",
+    "static/media/3669361_delete_ic_icon.svg": "/prometheus-x-course-task/static/media/3669361_delete_ic_icon.8adf038d856020602610c29fa726dc42.svg",
+    "main.eea7ced5.css.map": "/prometheus-x-course-task/static/css/main.eea7ced5.css.map",
+    "main.f3d35abc.js.map": "/prometheus-x-course-task/static/js/main.f3d35abc.js.map",
     "787.28cb0dcd.chunk.js.map": "/prometheus-x-course-task/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea3f2804.css",
-    "static/js/main.19f48f43.js"
+    "static/css/main.eea7ced5.css",
+    "static/js/main.f3d35abc.js"
   ]
 }
