@@ -6,6 +6,7 @@ import { BookContext } from "../App";
 export default function BookList() {
     const books = useContext(BookContext);
     const [arrayBook, setArrayBook] = useState(books);
+    const [nameMenuPrice, setNameMenuPrice] = useState("price");
 
     const arrayCard = arrayBook.map((b) => <Card book={b} key={b.id}></Card>);
     const less15="0 < price <=15";
@@ -15,20 +16,25 @@ export default function BookList() {
     function priceSort(order) {
         let array = [...books];
         let result = [];
+        let price="Price";
         if (order === "all") {
             result = array;
+            price="Price"
         } else {
             if (order === "less15") {
                 result = array.filter((book) => book.price <= 15);
+                price="0 < price <=15";
             } else {
                 if (order === "15-30") {
                     result = array.filter((book) => (book.price > 15 && book.price <= 30));
+                    price="15 < price <=30";
                 } else {
                     result = array.filter((book) => book.price > 30);
+                    price="price > 30";
                 }
             }
         }
-
+        setNameMenuPrice(price);
         setArrayBook(result);
     }
 
@@ -47,7 +53,7 @@ export default function BookList() {
                 </div>
                 <div className="dropdown">
                     <button type="button" className="btn_sm dropdown-toggle" data-bs-toggle="dropdown">
-                        Price
+                        {nameMenuPrice}
                     </button>
                     <ul className="dropdown-menu">
                         <li><button onClick={() => priceSort('all')} className="dropdown-item" href="#">All</button></li>

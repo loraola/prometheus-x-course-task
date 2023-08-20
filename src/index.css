@@ -23,7 +23,7 @@ body * {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .signin-form-label{
@@ -60,6 +60,12 @@ input[type=text] {
   border-radius: 3px;
   box-sizing: border-box;
   text-align: center;
+}
+button[type=text]{
+  border: 2px solid #5138cb;
+  border-radius: 3px; 
+  box-sizing: border-box;
+  text-align: center; 
 }
 
 button[type=submit] {
@@ -126,7 +132,6 @@ button[type=submit] {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 1px 0px 5px 0px rgb(0 0 0 );
   } 
 
    div.card.book-card {
@@ -168,7 +173,9 @@ button[type=submit] {
   div.purchase>button {
   width: 100%;
   }
-
+  div.purchase>button[type=text] {
+    display:none;
+  }
   .grid-container-book>div p {
     font-size: 12px;
   }
@@ -236,6 +243,7 @@ footer {
   color: #ffffff;
   padding: 0 0;
   height: 80px;
+  box-shadow: 1px 0px 5px 0px rgb(0 0 0 );
 }
 
 .header_title {
@@ -279,6 +287,7 @@ svg#badge {
 
 .bg-card-body {
   background-color: #d1d1e9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .book-card-image {
@@ -506,11 +515,6 @@ div.noPage p {
   background-color: #eef2c8;
 }
 
-.shopping {
-  width: 50px;
-  height: 35px;
-  margin: 10px 10px 20px;
-}
 
 
 .noPage {
@@ -569,18 +573,20 @@ body {
 }
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 150px;
-  background-color: darkblue;
-  color: #fff;
+  width: 100%;
+  background-color:#e5e5ed;
+  color: #3e2d93;
   text-align: center;
-  border-radius: 6px;
+  border-radius: 3px;
   padding: 5px 0;
-  top: -5px;
-  left: 55%;
+  
 
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
+  bottom: 100%;
+  left:  20%;
+  margin-left: -60px;
 }
 
 .tooltip:hover .tooltiptext {

@@ -7,8 +7,6 @@ import BookToCart from './BookToCart';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content';
-import continuePar from '../Components/NicePng_cart.png';
-import shoppingCart from '../Components/icons8-shopping.gif';
 function FullCart({ array }) {
     let sum = 0;
     const [BookCart] = useContext(BookCartContext);
@@ -53,7 +51,7 @@ export default function Cart() {
         <main className="page-body">
             <div className="container grid-container">
                 <div className="purchase">
-                    <img className="navbar-brand shopping" src={continuePar} alt="continue" onClick={shopping} />
+                <button type="text" onClick={shopping}>Continue shopping</button>
                 </div>
                 <div />
                 <div className="purchase">

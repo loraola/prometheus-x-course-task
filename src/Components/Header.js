@@ -3,7 +3,6 @@ import '../index.css';
 import HeaderBar from './HeaderBar';
 import { useContext } from 'react';
 import { UserContext } from '../App';
-import bookshelfWall from '../Components/bookshelfWall.png'
 
 export default function Header() {
 const [user] = useContext(UserContext); 
