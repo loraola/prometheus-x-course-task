@@ -61,10 +61,13 @@ input[type=text] {
   box-sizing: border-box;
   text-align: center;
 }
-button[type=text]{
+.continue_btn {
+  width: 200px;
   border: 2px solid #5138cb;
+  background-color: #d1d1e9;
+  padding: 10px 18px;
   border-radius: 3px; 
-  box-sizing: border-box;
+  margin: 8px 0;
   text-align: center; 
 }
 

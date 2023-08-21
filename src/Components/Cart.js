@@ -51,7 +51,7 @@ export default function Cart() {
         <main className="page-body">
             <div className="container grid-container">
                 <div className="purchase">
-                <button type="text" onClick={shopping}>Continue shopping</button>
+                <button className="continue_btn" onClick={shopping}>Continue shopping</button>
                 </div>
                 <div />
                 <div className="purchase">
