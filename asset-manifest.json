@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/prometheus-x-course-task/static/css/main.76660675.css",
-    "main.js": "/prometheus-x-course-task/static/js/main.acd4b31d.js",
+    "main.js": "/prometheus-x-course-task/static/js/main.15e1f2f3.js",
     "static/js/787.28cb0dcd.chunk.js": "/prometheus-x-course-task/static/js/787.28cb0dcd.chunk.js",
     "static/media/page404.png": "/prometheus-x-course-task/static/media/page404.b305bfb474a86921f691.png",
     "static/media/arrow--back-icon.png": "/prometheus-x-course-task/static/media/arrow--back-icon.02b3e1b4b7285b3377f5.png",
     "static/media/avatar.png": "/prometheus-x-course-task/static/media/avatar.0d14c6999b4a5c8e86a7.png",
     "static/media/bookEmpty.jpg": "/prometheus-x-course-task/static/media/bookEmpty.221ea3511f55e7de99a3.jpg",
     "static/media/cart.svg": "/prometheus-x-course-task/static/media/cart.ea00c9f36b04db30e3804db698e3ca4d.svg",
-    "static/media/cart2.svg": "/prometheus-x-course-task/static/media/cart2.6379ef043636dfb03722dbed8d18a415.svg",
+    "static/media/cart2.svg": "/prometheus-x-course-task/static/media/cart2.45b54827e22012a93c77ad0985c4838c.svg",
     "static/media/search-3076.svg": "/prometheus-x-course-task/static/media/search-3076.10a972e5e2f9bf555ce5.svg",
     "index.html": "/prometheus-x-course-task/index.html",
     "static/media/3669361_delete_ic_icon.svg": "/prometheus-x-course-task/static/media/3669361_delete_ic_icon.8adf038d856020602610c29fa726dc42.svg",
     "main.76660675.css.map": "/prometheus-x-course-task/static/css/main.76660675.css.map",
-    "main.acd4b31d.js.map": "/prometheus-x-course-task/static/js/main.acd4b31d.js.map",
+    "main.15e1f2f3.js.map": "/prometheus-x-course-task/static/js/main.15e1f2f3.js.map",
     "787.28cb0dcd.chunk.js.map": "/prometheus-x-course-task/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.76660675.css",
-    "static/js/main.acd4b31d.js"
+    "static/js/main.15e1f2f3.js"
   ]
 }
