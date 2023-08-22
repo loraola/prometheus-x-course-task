@@ -4,8 +4,10 @@ import { useState, useContext } from 'react';
 import { BookContext } from "../App";
 import bookEmpty from "./bookEmpty.jpg";
 import { BookCartContext } from "../App";
-import Swal from 'sweetalert2'
-import withReactContent from 'sweetalert2-react-content'
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
+import Counter from './Counter';
+
 
 
 export default function SpecificBook() {
@@ -20,6 +22,7 @@ export default function SpecificBook() {
     const [priceTotal, setPriceTotal] = useState(resultBook.price);
     const [count, setCount] = useState(1);
     const MySwal = withReactContent(Swal);
+   
 
     const AddToCart = () => {
         let resArray = [...BookCart];
@@ -44,6 +47,7 @@ export default function SpecificBook() {
         });
     }
 
+
     const countInput = ((event) => {
         if (event >= 1 && event <= 42) {
             setPriceTotal(resultBook.price * event);
@@ -67,7 +71,7 @@ export default function SpecificBook() {
 
     return (
         <main>
-            <div className="container rowPropetyBook" style={{marginTop:'30px'}}>
+            <div className="container rowPropetyBook" style={{ marginTop: '30px' }}>
                 <div id="start" className="row_item1">
                     <img src={altBook} alt="title_book" />
                 </div>
@@ -84,8 +88,7 @@ export default function SpecificBook() {
                     </div>
                     <div className="column3_row">
                         <p>Count</p>
-                        <input type="number" id="Count"
-                            name="Count" onChange={(e) => countInput(e.target.value)} defaultValue={1} min="1" max="42" />
+                    <Counter notifyChange={countInput}/>
                     </div>
                     <div className="column3_row">
                         <p>Total price:</p>
@@ -96,7 +99,7 @@ export default function SpecificBook() {
                     </div>
                 </div>
             </div>
-            <div className='container' style={{marginTop:'30px'}}>
+            <div className='container' style={{ marginTop: '30px' }}>
                 <p id="description"><span>Book description: </span>{resultBook.description}</p>
             </div>
         </main>
